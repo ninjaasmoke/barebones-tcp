@@ -1,7 +1,7 @@
 // main.cpp : Nithin
 // Desc : the starting point of a chat server app
 
-// #pragma comment(lib, "Ws2_32.lib")
+#pragma comment(lib, "Ws2_32.lib")
 
 #include <iostream>
 #include <winsock2.h>
