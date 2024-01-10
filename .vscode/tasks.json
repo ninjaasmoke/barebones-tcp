@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "*.cpp",
+                "-o",
+                "main",
+                "-I",
+                "C:\\boost\\boost_1_66_0",
+                "-L",
+                "C:\\boost\\boost_1_66_0\\stage\\lib",
+                "-Wall",
+                "-Werror"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
