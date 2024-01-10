@@ -6,16 +6,10 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "-g",
                 "*.cpp",
+                "-lws2_32",
                 "-o",
                 "main",
-                "-I",
-                "C:\\boost\\boost_1_66_0",
-                "-L",
-                "C:\\boost\\boost_1_66_0\\stage\\lib",
-                "-Wall",
-                "-Werror"
             ],
             "group": {
                 "kind": "build",
