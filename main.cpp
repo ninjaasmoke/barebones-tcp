@@ -13,13 +13,16 @@ const int kPort = 3001;
 const int kBufferLength = 4096;
 const int kByteBufferZeroErr = 1;
 
+const int WINSOCK_MAJOR_VERSION = 2;
+const int WINSOCK_MINOR_VERSION = 2;
+
 int main()
 {
 
     // initialise winsock
     WSADATA wsData;
 
-    WORD ver = MAKEWORD(2, 2);
+    WORD ver = MAKEWORD(WINSOCK_MAJOR_VERSION, WINSOCK_MINOR_VERSION);
 
     int wsOK = WSAStartup(ver, &wsData);
 
